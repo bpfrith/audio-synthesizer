@@ -1,11 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>Audio Synth</title>
-    <link rel='stylesheet' type='text/css' href='main.css'>
-    <script src='bundle.js'></script>
+    <title>React synthesizer</title>
+    <script src="./node_modules/react/dist/react-with-addons.js"></script>
+    <style type="text/css">
+      body {
+        padding : 32px;
+      }
+      .content {
+        width : 640px;
+        padding : 32px;
+        border : 1px solid #cccccc;
+        margin : auto;
+      }
+      .control {
+        margin: 16px 0;
+      }
+      .control label {
+        display: inline-block;
+        width : 240px;
+      }
+    </style>
   </head>
   <body>
-    <div id='app'>
+    <div id="app" class="content"></div>
+      <script src="dist/bundle.js"></script>
   </body>
 </html>
